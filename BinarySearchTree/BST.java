@@ -60,6 +60,15 @@ class BST {
         }
         return root;
     }
+    static int maxDepth(Node root){
+	    if(root == null) return 0;
+	    else{
+		    int lDepth = maxDepth(root.left);
+		    int rDepth = maxDepth(root.right);
+		    if(lDepth > rDepth) return lDepth+1;
+		    else return rDepht+1;
+	    }
+    }
     static int minValue(Node root){
         int minv = root.key;
         while(root.left != null)
