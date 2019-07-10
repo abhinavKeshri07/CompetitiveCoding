@@ -3,11 +3,6 @@ import java.util.*;
 // implement this sorting method whenever there is restriction on using Built in sorting.
 public class Main{
     static int partition(int arr[] , int low ,int high){
-        for(int i = low ; i <= high; i++)
-        {
-            System.out.print(arr[i]+ " ");
-        }
-        System.out.println();
         int pivot = arr[high];
         int i = (low -1);
         for(int j = low; j <= high -1; j++){
